@@ -86,3 +86,31 @@ GitHub: [kishorongit](https://github.com/kishorongit)
 This project is for **educational purposes only**.</br>
 Web scraping may violate the Terms of Service of some websites.</br>
 Always check site policies before scraping.
+
+---
+
+## 🤝 Ethical & Responsible Scraping
+
+Before using this project or extending it further, it’s important to understand the **responsibilities of web scraping**:
+
+### ✅ Best Practices
+
+- **Check the Terms of Service (ToS):** Many websites explicitly restrict automated scraping. Always review their ToS before scraping.
+- **Respect `robots.txt`:** Most sites provide a `robots.txt` file (e.g., `https://example.com/robots.txt`) which indicates which parts of the site can be accessed by bots.
+- **Prefer APIs when available:** Many news outlets (e.g., New York Times, The Guardian) provide official APIs for developers. Using these is safer and more reliable than scraping HTML.
+- **Throttle requests:** Avoid overwhelming servers. Use delays (`time.sleep()` in Python) and limit the number of requests per second.
+- **Identify your scraper:** Always set a custom `User-Agent` string so site administrators can understand who is making requests.
+- **Cache data:** If you need repeated access to the same content, store it locally instead of hitting the website multiple times.
+
+### ⚠️ Things to Avoid
+
+- **Bypassing blocks or CAPTCHAs:** Techniques like rotating proxies or automated CAPTCHA solving may violate ToS and even legal regulations.
+- **Commercial redistribution of scraped data:** Headlines and articles are usually copyrighted. Redistribution may require licensing.
+- **High-frequency scraping:** Flooding a website with requests can degrade its performance and potentially get your IP banned.
+
+### 🎯 Rule of Thumb
+
+- For **learning and personal projects**, scraping public headlines or RSS feeds in moderation is generally fine.  
+- For **production or commercial projects**, always seek permission, check licenses, or use official APIs.
+
+This project is meant for **educational purposes only**, to demonstrate how to work with HTTP requests and HTML parsing responsibly.
